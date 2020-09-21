@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    background-color: grey;
+    width:80%;
+    text-align:right;
+    margin: 0 auto;
+}
+h1 {
+    color: pink;
+    margin:0px;
+}
+h2 {
+    font-size: 1.2em;
+    font-family: serif;
+}
+.system, .font-face {
+    color: pink;
+    font-size: 1.3em;
+}
