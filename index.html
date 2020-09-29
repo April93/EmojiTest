@@ -9,105 +9,130 @@
 
 
     <body>
+        <br>
         <h1>Emoji Font Test</h1>
-        <b>Fallback Font</b>
-        <div class="noto-traditional">
-            Local: <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span><br>
-            Browser: <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span><br>
-            Everyone should be able to see "browser".<br>"Local" should match if you correctly installed Noto Emoji.<br>Otherwise it should be your emoji fallback font.
+        <br>
+        <b>Test Fallback Font</b>
+        <div class="symbola">
+            <span class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</span><br>
+            Everyone should be able to see this <a href="https://dn-works.com/wp-content/uploads/2020/UFAS-Fonts/Symbola.zip">Symbola</a> font.<br>If a font fails to load, this font will be shown instead.
+            <br>If the emoji are different, but still pink, then the font was read as B&W and not color.
         </div>
-<div style="float:left">
+        <br><b>Default Emoji Fallback</b><br>
+        😀😁😂😃😄😅😆😇😈😉😊😋😌😍<br>
+        This is your default emoji fallback font.<br>This will be shown when an emoji font is not specified/loaded.
+<div style="">
         <h2>Browser Format Tests (Web Fonts)</h2>
-            <b>CBDT/CBLC (Google Format)</b><br>
-            <span class="google">
-                Google's "Noto Color Emoji": 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <span class="emojione-android">
-                EmojiOne: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <span class="joypixels">
-                Joypixels: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <br>
-            <b>COLR/CPAL (Microsoft Format)</b><br>
-            <span class="microsoft">
-                Microsoft's "Segoe UI Emoji": 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>            
-            </span><br>
-            <span class="emojione-moz">
-                EmojiOne Mozilla: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <span class="firefox-moz">
-                Firefox Emoji: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <br>
-            <b>SBIX (Apple Format)</b><br>
-            <span class="apple">
-                Apple Color Emoji: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <span class="emojione-apple">
-                EmojiOne: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <br>
-            <b>SVG</b><br>
-            <span class="emojione-svg">
-                EmojiOne: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <span class="openmoji">
-                OpenMoji: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-            <span class="twitter">
-                Twitter Color Emoji: 
-                <span class="font-face">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </span><br>
-</div>
-<div style="float:right">
+            <table>
+            <tr>
+                <th class="cbdt">CBDT/CBLC</th>
+                <th>(Google Format)</th>
+            </tr>
+            <tr class="google">
+                <td><a href="https://github.com/googlefonts/noto-emoji/blob/master/fonts/NotoColorEmoji.ttf">Google's "Noto Color Emoji":</a></td>
+                <td class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="emojione-android">
+                <td><a href="https://github.com/joypixels/emojione-assets/releases/download/4.5/emojione-android.ttf">
+                    EmojiOne:</a></td>
+                <td class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="joypixels">
+                <td><a href="https://www.joypixels.com/fonts">JoyPixels:</a></td>
+                <td class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr>
+                <th class="colr">COLR/CPAL</th>
+                <th>(Microsoft Format)</th>
+            </tr>
+            <tr class="microsoft">
+                <td><a href="fonts/seguiemj.ttf">Microsoft's "Segoe UI Emoji":</a></td>
+                <td class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="firefox-moz">
+                <td><a href="https://github.com/mozilla/fxemoji/blob/gh-pages/dist/FirefoxEmoji/FirefoxEmoji.ttf">Firefox Emoji:</a></td>
+                <td class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr>
+                <th class="sbix">SBIX</th>
+                <th>(Apple Format)</th>
+            </tr>
+            <tr class="mutant">
+                <td><a href="https://mutant.tech/download/all/">Mutant Standard Emoji:</a></td>
+                <td class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr>
+                <th class="svg">SVG</th>
+                <th>(Mozilla/Adobe/Web Standard)</th>
+            </tr>
+            <tr class="emojione-svg">
+                <td><a href="https://github.com/joypixels/emojione-assets/releases/download/3.1.2/emojione-svg.otf">EmojiOne:</a></td>
+                <td class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="twitter">
+                <td><a href="https://github.com/eosrei/twemoji-color-font">Twitter Color Emoji:</a></td>
+                <td class="font-face">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+        </table>
+</tr>
+<div style="">
         <h2>Font Family Tests (Local Fonts)</h2>
-            <div class="apple">
-                <b>Apple Color Emoji</b> (SBIX):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
-            <div class="emojione">
-                EmojiOne (Various Formats):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
-            <div class="emojione-moz">
-                EmojiOne Mozilla (COLR/CPAL):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
-            <div class="firefox-moz">
-                Firefox Emoji (COLR/CPAL):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
-            <div class="joypixels">
-                Joypixels (CBDT/CBLC):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
-            <div class="google">
-                <b>Noto Color Emoji</b> (CBDT/CBLC):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
-            <div class="openmoji">
-                OpenMoji (SVG):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
-            <div class="microsoft">
-                <b>Segoe UI Emoji</b> (COLR/CPAL):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
-            <div class="twitter">
-                <b>Twitter Color Emoji</b> (SVG):
-                <span class="system">🐶🐱🐭🐹🐰🐻🐼🐨🐯🐮🐷</span>
-            </div>
+        <table>
+            <tr class="apple">
+                <td><a href="fonts/Apple Color Emoji.ttf">
+                    <b>Apple Color Emoji</b>
+                </a> <span class="sbix">(SBIX):</span></td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="emojione">
+                <td><a href="https://github.com/joypixels/emojione-assets/releases/tag/4.5">
+                    EmojiOne</a> (Various Formats):</td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="firefox-moz">
+                <td><a href="https://github.com/mozilla/fxemoji/blob/gh-pages/dist/FirefoxEmoji/FirefoxEmoji.ttf">Firefox Emoji</a> <span class="colr">(COLR/CPAL):</span></td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="joypixels">
+                <td><a href="https://www.joypixels.com/fonts">
+                    JoyPixels</a> (Various Formats):</td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="mutant">
+                <td><a href="https://mutant.tech/download/all/">
+                    Mutant Standard Emoji
+                </a> <span class="sbix">(SBIX):</span></td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="google">
+                <td>
+                    <a href="https://github.com/googlefonts/noto-emoji/blob/master/fonts/NotoColorEmoji.ttf">
+                    <b>Noto Color Emoji</b>
+                    </a> <span class="cbdt">(CBDT/CBLC):</span></td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="openmoji">
+                <td>
+                    <a href="https://github.com/hfg-gmuend/openmoji/blob/master/font/OpenMoji-Color.ttf">
+                    OpenMoji
+                    </a> <span class="svg">(SVG):</span></td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="microsoft">
+                <td>
+                    <a href="fonts/seguiemj.ttf">
+                    <b>Segoe UI Emoji</b>
+                    </a> <span class="colr">(COLR/CPAL):</span></td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+            <tr class="twitter">
+                <td>
+                    <a href="https://github.com/eosrei/twemoji-color-font">
+                    <b>Twitter Color Emoji</b>
+                    </a> <span class="svg">(SVG):</span></td>
+                <td class="system">😀😁😂😃😄😅😆😇😈😉😊😋😌😍</td>
+            </tr>
+        </table>
 </div>
     </body>
 </html>

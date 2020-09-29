@@ -1,104 +1,100 @@
 .microsoft > .system {
-    font-family: "Segoe UI Emoji", "Noto Emoji";
+    font-family: "Segoe UI Emoji", "SYMBOLA-font_face";
 }
 
 .microsoft > .font-face {
-    font-family: "MSFT-font_face", "Noto Emoji";
+    font-family: "MSFT-font_face", "SYMBOLA-font_face";
 }
 
 .apple > .system {
-    font-family: "Apple Color Emoji", "Noto Emoji";
+    font-family: "Apple Color Emoji", "SYMBOLA-font_face";
 }
 
 .apple > .font-face {
-    font-family: "APPL-font_face", "Noto Emoji";
+    font-family: "APPL-font_face", "SYMBOLA-font_face";
+}
+
+.mutant > .system {
+    font-family: "Mutant Standard Emoji", "SYMBOLA-font_face";
+}
+
+.mutant > .font-face {
+    font-family: "MTSD-font_face", "SYMBOLA-font_face";
 }
 
 .google > .system {
-    font-family: "Noto Color Emoji", "Noto Emoji";
+    font-family: "Noto Color Emoji", "SYMBOLA-font_face";
 }
 
 .google > .font-face {
-    font-family: "GOOG-font_face", "Noto Emoji";
+    font-family: "GOOG-font_face", "SYMBOLA-font_face";
 }
 
 .twitter > .system {
-    font-family: "Twitter Color Emoji", "Noto Emoji";
+    font-family: "Twitter Color Emoji", "SYMBOLA-font_face";
 }
 
 .twitter > .font-face {
-    font-family: "TWTR-font_face", "Noto Emoji";
+    font-family: "TWTR-font_face", "SYMBOLA-font_face";
 }
 
 .emojione-moz > .system {
-    font-family: "EmojiOne Mozilla", "Noto Emoji";
+    font-family: "EmojiOne Mozilla", "SYMBOLA-font_face";
 }
 
 .emojione-moz > .font-face {
-    font-family: "E1MZ-font_face", "Noto Emoji";
+    font-family: "E1MZ-font_face", "SYMBOLA-font_face";
 }
 
 .firefox-moz > .system {
-    font-family: "Firefox Emoji", "Noto Emoji";
+    font-family: "Firefox Emoji", "SYMBOLA-font_face";
 }
 
 .firefox-moz > .font-face {
-    font-family: "FXMZ-font_face", "Noto Emoji";
-}
-
-.gilbert > .system {
-    font-family: "Gilbert Color", "Noto Emoji";
-}
-
-.gilbert > .font-face {
-    font-family: "TYWP-font_face", "Noto Emoji";
+    font-family: "FXMZ-font_face", "SYMBOLA-font_face";
 }
 
 .joypixels > .system {
-    font-family: "JoyPixels", "Noto Emoji";
+    font-family: "JoyPixels", "SYMBOLA-font_face";
 }
 
 .joypixels > .font-face {
-    font-family: "JYPX-font_face", "Noto Emoji";
-}
-
-.funkster > .system {
-    font-family: "Funkster", "Noto Emoji";
-}
-
-.funkster > .font-face {
-    font-family: "FUNK-font_face", "Noto Emoji";
+    font-family: "JYPX-font_face", "SYMBOLA-font_face";
 }
 
 .noto-traditional > .system {
-    font-family: "Noto Emoji", "Noto Emoji";
+    font-family: "Noto Emoji";
 }
 
 .noto-traditional > .font-face {
-    font-family: "NOTR-font_face", "Noto Emoji";
+    font-family: "NOTR-font_face", "SYMBOLA-font_face";
+}
+
+.symbola > .font-face {
+    font-family: "SYMBOLA-font_face", "SYMBOLA-font_face";
 }
 
 .openmoji > .system {
-    font-family: "OpenMoji", "Noto Emoji";
+    font-family: "OpenMoji", "SYMBOLA-font_face";
 }
 
 .openmoji > .font-face {
-    font-family: "OPMJ-font_face", "Noto Emoji";
+    font-family: "OPMJ-font_face", "SYMBOLA-font_face";
 }
 
 
 /* EmojiOne Fonts */
 .emojione-android > .font-face {
-    font-family: "E1CB-font_face", "Noto Emoji";
+    font-family: "E1CB-font_face", "SYMBOLA-font_face";
 }
 .emojione-apple > .font-face {
-    font-family: "E1SB-font_face", "Noto Emoji";
+    font-family: "E1SB-font_face", "SYMBOLA-font_face";
 }
 .emojione > .system {
-    font-family: "EmojiOne", "Noto Emoji";
+    font-family: "EmojiOne", "SYMBOLA-font_face";
 }
 .emojione-svg > .font-face {
-    font-family: "E1SV-font_face", "Noto Emoji";
+    font-family: "E1SV-font_face", "SYMBOLA-font_face";
 }
 
 /* Setting up Browser Fonts */
@@ -121,14 +117,18 @@
 }
 
 /*SBIX*/
-@font-face {
+/*@font-face {
     font-family: "APPL-font_face";
     src: url("fonts/Apple Color Emoji.ttf") format("truetype");
-}
+}*/
 @font-face {
+    font-family: "MTSD-font_face";
+    src: url("fonts/MutantStandardEmoji-sbixOT.ttf") format("opentype");
+}
+/*@font-face {
     font-family: "E1SB-font_face";
     src: url("fonts/emojione-apple.ttc") format("truetype");
-}
+}*/
 
 /*CBDT*/
 @font-face {
@@ -143,27 +143,23 @@
     font-family: "E1CB-font_face";
     src: url("fonts/emojione-android.ttf") format("truetype");
 }
-@font-face {
-    font-family: "FUNK-font_face";
-    src: url("fonts/Funkster.ttf") format("truetype");
-}
 
 /*SVG*/
 @font-face {
     font-family: "TWTR-font_face";
-    src: url("fonts/TwitterColorEmoji-SVGinOT.ttf") format("truetype");
-}
-@font-face {
-    font-family: "TYWP-font_face";
-    src: url("fonts/Gilbert-Color Bold-Preview_1004.otf") format("truetype");
+    src: url("fonts/TwitterColorEmoji-SVGinOT.ttf") format("opentype");
 }
 @font-face {
     font-family: "E1SV-font_face";
-    src: url("fonts/emojione-svg.otf") format("truetype");
+    src: url("fonts/emojione-svg.otf") format("opentype");
 }
 
 /* Fallback */
 @font-face {
     font-family: "NOTR-font_face";
     src: url("fonts/NotoEmoji-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SYMBOLA-font_face";
+    src: url("fonts/Symbola.ttf") format("truetype");
 }
